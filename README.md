@@ -81,8 +81,31 @@ Exit
 **3** Using the type as MX, when sending the request to www.xavier.edu, what is returned is the protocol method, as well as postmaster which then identifies the administrator of the mail sever. I learned that this was different than other types used, for example Reverse.
 # Homework 7
 # Homework 8
+**R9** Sequence numbers ensure reliable data transfer; they allow for the sender and the receiver to veryify what packets were sent in what order. This, subsequently, also allows for multiple sending.
+
+**R10** Timers allow both end systems to maintain a time based interval where they can move at a more rapid rate than overhead of acknowledging packets. Additionally, in the worst case, the packets do not send at all and the sequence remains the same.
+
+**R11** Not necessary; the acknowledging bits achieve this inharently. 
+
+**R12** 
+****a.**** Upon not receiving the first packet, the recieve, then, ACK's the sender as to which packet sequence failed to send. Following such, the sender will retransmit until the packet is cohesive.
+****b.**** When an ACK is recieved, the sender will resend 1 new packet and 5 current packets from the new sequence. From there, it will move on to the new packet on the new sequence.
+****c.**** 5 packets will set the amount
+
+
+**R13**
+****a.**** When packets fail to transmit, the receiver will signify so, to which will halt the process until an ACK is recieved 
+****b.**** Failing to receiev an ACK will result in a hault
+****c.**** The addition of segments will increase the sequence range but will not suffice in resuming the transmission
+
+**P6** Deadlock occurs when the sender or receiver loose the ACK number in the sequence
+
+**P13** This causes the processes to have 0, 1, or 2 waiting periods, whereby the process can continue to send one packet and the sequence can move onto another slot - creating a parallel
+
+**P14** NAK and ACK work in conjunction with one another, where the ACK signifies the previous transmission was succesfully sent, while NAK signifies that the previous transmission has failed. These, together, allow for the state of the transmission to change accordingly.
+
 # Homework 9
-**P6** Deadlock is the result of the sender expecting a corrupt 1 bit, but the sender is waiting on the correct ACK.
+**P6** Deadlock is the result of the sender expecting an invalid ACK, but the sender is waiting on the correct ACK.
 
 **R14** 
 ****a.**** False
@@ -122,7 +145,9 @@ TCP: 6 segments. Then, 12222, marking that it received all but 2 segments.
 ****c.**** 9; 26; 29
 ****d.**** ((2^k) * 2) - 1) for x = 4
 ****e.**** ((2^k) * 2) - 1) for x = 7
-
+**P44** 
+****a.**** 6 rounds
+****b.**** 21/6 rounds
 
 # Homework 10
 **R6** From the text, to appreciate why a hardware implementation is needed, with a router's input ports, output ports, and switching fabric being handled by hardware, consider a 10Gbps input link and a 64-byte IP datagram; the input port has only 51.2ns to process the datagram before another datagram may arrive. If N ports are combined on a line card, the datagram-processing pipeline must operate N times faster - far too fast for software implementation. Similarly, executing routing protocols, performing management functions and comunicating with a SDN, are delt in much longer (by comparison) timeframes, making software a good choice. Additionally, the data plane is the physical forwarding of datagrams, while the control plane is the network-wide logic that routes them.
