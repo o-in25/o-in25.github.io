@@ -129,10 +129,13 @@ Searches for NAK; when found, it reiterates
 
 
 # Project 1
+https://github.com/o-in25/Web-Server
 # Project 2
+https://github.com/o-in25/ICMP-Pinger
 # Project 3
-
+https://github.com/o-in25/ICMP-Pinger
 # Lab 1
+![image tooltip here](/docs/imgs/l1.png)
 # Lab 2
 # Lab 3
 # Lab 4 
