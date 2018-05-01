@@ -64,6 +64,7 @@ Exit
 **P3** 
 ****a.**** Circuit switched; since the application requires long sessions, the cost of establishing and reestablishing connections would be over a longer duration. 
 ****b.**** In this case, no congestion control would be necessary, due to the capabilities of the link (i.e. the bandwith).
+
 **R22** Since the probability of packet loss is P, then the probability of no packet loss is (1 - P). The probability of success is (1 - P)^k. Accordingly, this figure of success has implications on the number of retransmits and if all hops are traveled to successfully, there would be no need to retransmit; with less success, more transmits. 
 
 **R23** The five layers are application, transport, network, link, and physical. Application is responsible for managing ports and processes; transport is responsible for the delivery of packets to a process; the network is responsible for network communication; the link is resposnible for internet commuication; the physcial is resposible for the metal to send information.
@@ -81,6 +82,33 @@ Exit
 # Homework 7
 # Homework 8
 # Homework 9
+**P6** Deadlock is the result of the sender expecting a corrupt 1 bit, but the sender is waiting on the correct ACK.
+
+**R14** 
+****a.**** False
+****b.**** True
+****c.**** True
+****d.**** False
+****e.**** True
+****f.**** False
+****g.**** False
+
+**R15**
+****a.**** 20 bytes
+****b.**** 90; the sequence number is regardless
+
+**R16** 
+Segment 1: SEQ = 43; ACK = 80
+Segment 2: SEQ = 80; ACK = 80
+Segment 3: SEQ = 44; ACK = 81
+
+**P19**  
+Searches for NAK; when found, it reiterates
+
+**P37** 
+****a.**** Go back in 9 segments. Then, 12345
+****b.****
+
 # Homework 10
 **R6** From the text, to appreciate why a hardware implementation is needed, with a router's input ports, output ports, and switching fabric being handled by hardware, consider a 10Gbps input link and a 64-byte IP datagram; the input port has only 51.2ns to process the datagram before another datagram may arrive. If N ports are combined on a line card, the datagram-processing pipeline must operate N times faster - far too fast for software implementation. Similarly, executing routing protocols, performing management functions and comunicating with a SDN, are delt in much longer (by comparison) timeframes, making software a good choice. Additionally, the data plane is the physical forwarding of datagrams, while the control plane is the network-wide logic that routes them.
 
