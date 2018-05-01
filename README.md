@@ -60,6 +60,16 @@ Exit
 
 
 # Homework 3
+**P2** Since at t = NL/R is the time for the first packet to reach, the second one would take t = NL/R + L/R and t = NL/R + L/R for the third, making the total end-to-end time is t - NL/R + (P - 1) * L/R
+**P3** 
+****a.**** Circuit switched; since the application requires long sessions, the cost of establishing and reestablishing connections would be over a longer duration. 
+****b.**** In this case, no congestion control would be necessary, due to the capabilities of the link (i.e. the bandwith).
+**R22** Since the probability of packet loss is P, then the probability of no packet loss is (1 - P). The probability of success is (1 - P)^k. Accordingly, this figure of success has implications on the number of retransmits and if all hops are traveled to successfully, there would be no need to retransmit; with less success, more transmits. 
+
+**R23** The five layers are application, transport, network, link, and physical. Application is responsible for managing ports and processes; transport is responsible for the delivery of packets to a process; the network is responsible for network communication; the link is resposnible for internet commuication; the physcial is resposible for the metal to send information.
+
+**R25** Network; link; application/transport
+
 # Homework 4
 # Homework 5
 # Homework 6
