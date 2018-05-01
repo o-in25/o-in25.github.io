@@ -103,11 +103,26 @@ Segment 2: SEQ = 80; ACK = 80
 Segment 3: SEQ = 44; ACK = 81
 
 **P19**  
-Searches for NAK; when found, it reiterates
+Searches for ACK; when found, it reiterates into the loop until a new ACK and segment appears
+
+
+**P26**
+****a.**** The sequence number is increaded by the total bytes sent
+****b.**** (2^32 / 536) + 66 (header)
 
 **P37** 
-****a.**** Go back in 9 segments. Then, 12345
-****b.****
+****a.**** Go back in: 9 segments. Then, 12345, followed by 2345. Assuming the receiver never received the remaining 4 segements, the sequence number would be 1 for the first send, 5 for the second.
+Selective repeat: 6 segments. Then, 12345 and 2 for the misisng segment.
+TCP: 6 segments. Then, 12222, marking that it received all but 2 segments. 
+****b.**** TCP, inharently, does not have timeout.
+
+**9** 
+****a.**** Slow start increasing expontentially; 1-4, 6-9, 17-20, 23-26.
+****b.**** Congestion controll models a linear function then drops as to not congest the network.
+****c.**** 9; 26; 29
+****d.**** ((2^k) * 2) - 1) for x = 4
+****e.**** ((2^k) * 2) - 1) for x = 7
+
 
 # Homework 10
 **R6** From the text, to appreciate why a hardware implementation is needed, with a router's input ports, output ports, and switching fabric being handled by hardware, consider a 10Gbps input link and a 64-byte IP datagram; the input port has only 51.2ns to process the datagram before another datagram may arrive. If N ports are combined on a line card, the datagram-processing pipeline must operate N times faster - far too fast for software implementation. Similarly, executing routing protocols, performing management functions and comunicating with a SDN, are delt in much longer (by comparison) timeframes, making software a good choice. Additionally, the data plane is the physical forwarding of datagrams, while the control plane is the network-wide logic that routes them.
