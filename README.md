@@ -1,5 +1,29 @@
 # Networking Portfilio
 
+# Homework 1
+# Homework 2
+# Homework 3
+# Homework 4
+# Homework 5
+# Homework 6
+# Homework 7
+# Homework 8
+# Homework 9
+# Homework 10
+# Homework 11
+# Homework 12
+# Homework 13
+# Homework 14
+# Homework 15
+
+
+# Project 1
+# Project 2
+# Project 3
+
+# Lab 1
+# Lab 2
+# Lab 3
 # Lab 4 
 ## Part 1
 **Question 1:** The difference between the protocol downgrade attack and Cain’s SSL MITM is that the protocol downgrade performed in the lab simply reroutes the traffic from the node to the machine, whereas Cain’s attack collects certificates that “contain the same parameters of the real ones except for asymmetric encryption keys; this deceives a lot of users to accept the server certificate and continue with the session.” The advantages of the protocol downgrade is that the attacker does not know that he or she has traffic that is being rerouted if the IP address and Gateway are exposed. With Cain’s method, SSL must be breached.
