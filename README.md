@@ -177,24 +177,44 @@ https://github.com/o-in25/ICMP-Pinger
 # Lab 1
 ![image tooltip here](/docs/imgs/l1.png)
 # Lab 2
+![image tooltip here](/docs/imgs/l2.png)
+![image tooltip here](/docs/imgs/l2b.png)
 **Question 1:** Both versions are running 1.1
+
 **Question 2:** The browser accepts en-us
+
 **Question 3:** 192.168.2.2.48; 128.119.245.12
+
 **Question 4:** 200 OK
+
 **Question 5:** Fri, Feb 02 2018 01:59:04
+
 **Question 6:** 486 bytes
+
 **Question 7** Upgrade-Insecure-Requests
+
 **Question 8:** Yes
-**Question 9:** Because of code 304 Not Modified
+
+**Question 9:** Because of code 304: Not Modified
+
 **Question 10:** Yes; the time the file was last modified
+
 **Question 11:** The code 200: OK. Since the If-Modided-Since was true, the response was sent
+
 **Question 12:** 2 packets; packet 340
+
 **Question 13:** Packet 341
+
 **Quetsion 14:** 200 OK
+
 **Question 15:** 2 Segments
+
 **Question 16:** 3 Requests
+
 **Quetsion 17:** By the sequential order the packets arrived in, the file had come in serialized 
+
 **Question 18:** 401: Authorization Required
+
 **Quetsion 19:** Authorization: Basic ...
 # Lab 3
 # Lab 4 
