@@ -177,7 +177,7 @@ https://github.com/o-in25/ICMP-Pinger
 # Lab 1
 ![image tooltip here](/docs/imgs/l1.png)
 # Lab 2
-![image tooltip here](/docs/imgs/l2.png)
+![image tooltip here](/docs/imgs/l2a.png)
 ![image tooltip here](/docs/imgs/l2b.png)
 **Question 1:** Both versions are running 1.1
 
