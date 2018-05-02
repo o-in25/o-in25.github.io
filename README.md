@@ -217,6 +217,30 @@ https://github.com/o-in25/ICMP-Pinger
 
 **Quetsion 19:** Authorization: Basic ...
 # Lab 3
+**Question 1:** IP of client: 192.168.1.102; TCP port of client: 1161
+
+**Question 2:** IP of host: 128.119.245.12l TCP port of host: 80
+
+**Question 3:** N/A
+![image tooltip here](/docs/imgs/l3a.png)
+**Question 4:** The sequence number is 0; this is identidied as the SYN segment by 0
+
+**Question 5:** The sequence number is 0; the acknowledgement number is 1; The site determined that value because it is acknowledging the first packet sent. The server adds 1 to the initial sequence number of the SYN segment from the client. A segment will be identified as a SYN_ACK segment if both SYN flag and ACKnowledgement flag in the segment are set to 1; segment 2
+![image tooltip here](/docs/imgs/13b.png)
+
+**Question 6:** Sequence number 1
+
+**Question 7:** Segment 1 sequence: 1; segment 2 sequence: 1; segment 3 sequence: 1; segment 4 sequence: 1; segment 5 sequence: 164091; segment 6 sequnece: 0; total times 1.7385 s for segment 1; 2.0261 s for segment 2. 
+
+**Question 8:** 1400 bytes
+
+**Question 9:** 17536 bytes; no
+
+**Question 10:** No, as there are no duplicate sequence numbers
+![image tooltip here](/docs/imgs/l3c.png)
+
+**Question 11:** The ACK is incremented by the size of data
+
 # Lab 4 
 ## Part 1
 **Question 1:** The difference between the protocol downgrade attack and Cain’s SSL MITM is that the protocol downgrade performed in the lab simply reroutes the traffic from the node to the machine, whereas Cain’s attack collects certificates that “contain the same parameters of the real ones except for asymmetric encryption keys; this deceives a lot of users to accept the server certificate and continue with the session.” The advantages of the protocol downgrade is that the attacker does not know that he or she has traffic that is being rerouted if the IP address and Gateway are exposed. With Cain’s method, SSL must be breached.
