@@ -171,21 +171,32 @@ TCP: 6 segments. Then, 12222, marking that it received all but 2 segments.
 **P1** 1100
 # Homework 15
 **P31:** (-1, 1, -1, 1, -1, 1, -1, 1) at d1, (1, -1, 1, -1, 1, -1, 1) at d0
+
 **P1:**  (-2) x (-1) + 2x1 + 2x1 + 2x1 / 8 = 1
+
 **P5:**  3(2x1) + (-2)x(-1) / 8 = 1
+
 **R3:** Path loss is due to the natural decay in signal over distance. Multipath propgation is the result of light casuing the signal to become blurry. Interference is caused by multiple transmissions distrupting a signal
+
 **R5:** Beacon frames contains all the information about the network and are transmitted periodically to announce the presence of a Wireless LAN network via an AP
+
 **R6:** True
+
 **R7:** Due to the high rate of failed transmissions due to signal loss, 802.11 requires ACK whereas the reliability of Ethernet does not.
+
 **7:**
+
 ****a.**** 0-2312 bytes
 ****b.**** 1700 bit times
 ****c.**** The data will be successfully sent because, even if A and B choose the same time peroid, due to exponential backoff, the connection will be sent. If the connection drops, however, it will not be sent.
 **8:**
+
 ****a.**** A and B will both listen via CSMA
 ****b.**** The data will be successfully sent because, even if A and B choose the same time peroid, due to exponential backoff, the connection will be sent.
 ****c.**** The protocol would still work, if B is still in range of A
+
 **R19:** The permanent address is that of the mobile device; the care-of address is the new address of the device when it reaches a new network and is assigned by the foreign network
+
 **R11:**
 ****a:**** No, since the Distance Vector algorithm is decentralized and takes some time to terminate, so some of the routers may not be able to route to the mobile node.
 ****b:**** Yes. If a node has just left a foreign network and joined a new one,  the routing entries from the old foreign network might not have been completely removed from the new network are being propagated. 
