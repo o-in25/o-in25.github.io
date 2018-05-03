@@ -165,6 +165,10 @@ TCP: 6 segments. Then, 12222, marking that it received all but 2 segments.
 # Homework 12
 # Homework 13
 # Homework 14
+**R2:** No; while each layer provides its own means of reliable delivery, IP does not guarentee that packets arrive in order. Therefore, TCP guarentees proper delivery - not just arrival.
+**R4:** While a node is transmitting it will start to receive a packet from the other.
+**R5:** When only one node has data to transmit it has throughput of R; all of them
+**P1** 1100
 # Homework 15
 **P31:** (-1, 1, -1, 1, -1, 1, -1, 1) at d1, (1, -1, 1, -1, 1, -1, 1) at d0
 **P1:**  (-2) x (-1) + 2x1 + 2x1 + 2x1 / 8 = 1
@@ -192,7 +196,7 @@ https://github.com/o-in25/Web-Server
 # Project 2
 https://github.com/o-in25/ICMP-Pinger
 # Project 3
-https://github.com/o-in25/ICMP-Pinger
+https://github.com/o-in25/ID-Server
 # Lab 1
 ![image tooltip here](/docs/imgs/l1.png)
 # Lab 2
